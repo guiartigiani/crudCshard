@@ -58,9 +58,7 @@ namespace Fiap.Web.Aula02.Controllers
         public IActionResult Deletar(int id)
         {
             var veiculo = _lista.First(v => v.Id == id);
-            //_lista.Remove(veiculo);
             return View(veiculo);
-            //return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -68,7 +66,6 @@ namespace Fiap.Web.Aula02.Controllers
         {
             veiculo = _lista.First(v => v.Id == id);
             _lista.Remove(veiculo);
-            //return View(veiculo);
             return RedirectToAction("Index");
         }
     }
