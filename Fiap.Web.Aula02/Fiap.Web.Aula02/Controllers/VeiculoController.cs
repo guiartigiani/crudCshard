@@ -63,7 +63,7 @@ namespace Fiap.Web.Aula02.Controllers
             //return RedirectToAction("Index");
         }
 
-        [HttpPost, ActionName("Deletar")]
+        [HttpPost]
         public IActionResult Deletar(Veiculo veiculo, int id)
         {
             veiculo = _lista.First(v => v.Id == id);
