@@ -37,7 +37,7 @@
     </div>
     <div class="mb-3">
         <label asp-for="Tipo"></label>
-        <select asp-for="Tipo" asp-items="@Html.GetEnumSelectList<TipoVeiculo>()">
+        <select asp-for="Tipo" asp-items="@Html.GetEnumSelectList<TipoVeiculo>()" class="form-select">
             <option>Selecione</option>
         </select>
     </div>
