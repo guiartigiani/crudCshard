@@ -11,13 +11,13 @@ html {
 html {
     position: relative;
     min-height: 100%;
-    background-color: black
+    background-image: url('https://www.otempo.com.br/image/contentid/policy:1.2890008:1692745133/Bugatti-Centodieci-2020-1280-13-jpg.jpg?f=3x2&w=1224');
+    background-size: cover;
 }
 
 body {
     margin-bottom: 60px;
 }
 
-header {
-    background-color: black
-}
+
+
