@@ -1,0 +1,32 @@
+﻿@model Fiap.Web.Aula02.Models.Motorista
+
+@{
+    ViewData["Title"] = "CadastrarMotorista";
+}
+
+<h1>Cadastrar Motorista</h1>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CadastrarMotorista">
+            <div class="mb-3">
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="DataNascimento"></label>
+                <input asp-for="DataNascimento" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Genero"></label>
+                <select asp-for="Genero" asp-items="@Html.GetEnumSelectList<Genero>()" class="form-select">
+                    <option>Selecione</option>
+                </select>
+            </div>
+            <button class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+

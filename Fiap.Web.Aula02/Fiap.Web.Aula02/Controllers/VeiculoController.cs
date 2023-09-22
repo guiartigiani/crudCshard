@@ -24,11 +24,8 @@ namespace Fiap.Web.Aula02.Controllers
         public IActionResult Cadastrar(Veiculo veiculo)
         {
             veiculo.Id = ++_id;
-            //Cadastrar na lista
             _lista.Add(veiculo);
 
-            //Mostrar mensagem de sucesso
-            // Após cadastrar o veículo com sucesso
             TempData["mostrarMensagem"] = true;
             TempData["mensagem"] = "Veiculo cadastrado com SUCESSO!";
 
