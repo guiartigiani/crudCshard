@@ -66,6 +66,8 @@ namespace Fiap.Web.Aula02.Controllers
         {
             veiculo = _lista.First(v => v.Id == id);
             _lista.Remove(veiculo);
+            TempData["mostrarMensagem"] = true;
+            TempData["mensagem"] = "Veiculo Removido";
             return RedirectToAction("Index");
         }
     }
